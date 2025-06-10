@@ -15,6 +15,11 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li id="auth-nav">
+                    <a href="#" id="login-btn" class="auth-btn">Login</a>
+                    <a href="#" id="logout-btn" class="auth-btn" style="display: none;">Logout</a>
+                    <span id="user-greeting" style="display: none; color: #caf0f8;">Welcome, <span id="username-display"></span>!</span>
+                </li>
             </ul>
         </nav>
     </header>
@@ -30,7 +35,13 @@
         <section id="contact" class="container">
             <h2>Contact Us</h2>
             <p>Feel free to reach out for any inquiries!</p>
-            <div class="card">
+            <div id="contact-protected" style="display: none;">
+                <div class="card auth-required">
+                    <h3>🔒 Authentication Required</h3>
+                    <p>Please <a href="#" id="login-link">login</a> to access the contact form.</p>
+                </div>
+            </div>
+            <div class="card" id="contact-form-container">
                 <form id="contact-form" action="#" method="post">
                     <div class="form-group">
                         <label for="name">Name:</label>
@@ -62,6 +73,32 @@
           </div>
         </section>
     </main>
+    
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-username">Username:</label>
+                    <input type="text" id="login-username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required>
+                </div>
+                <button type="submit" class="button">Login</button>
+                <div id="login-status" style="display: none;"></div>
+            </form>
+            <div class="demo-credentials">
+                <p><small><strong>Demo credentials:</strong><br>
+                Username: demo<br>
+                Password: password</small></p>
+            </div>
+        </div>
+    </div>
+    
     <footer>
         <p>&copy; 2023 My Static Website. All rights reserved.</p>
     </footer>
