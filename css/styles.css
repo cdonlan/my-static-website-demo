@@ -74,3 +74,15 @@ footer {
 .button:hover {
     background: #0096c7; /* Slightly darker teal */
 }
+
+.testimonials {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.testimonials .card {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    vertical-align: top;
+}

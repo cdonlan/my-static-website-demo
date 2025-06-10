@@ -51,6 +51,19 @@ To deploy this website on GitHub Pages, follow these steps:
 3. **Access Your Website**
    After a few minutes, your website will be available at `https://yourusername.github.io/my-static-website`.
 
+<!-- Testimonials Section -->
+<section class="testimonials container">
+  <h2>Testimonials</h2>
+  <div class="card">
+    <p>"This website is fantastic! Easy to use and visually appealing."</p>
+    <strong>- Alex P.</strong>
+  </div>
+  <div class="card">
+    <p>"I love the clean design and smooth navigation."</p>
+    <strong>- Jamie L.</strong>
+  </div>
+</section>
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
