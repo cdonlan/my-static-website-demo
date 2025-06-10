@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #e6f2ff; /* Light blue background */
 }
 
 header {
-    background: #35424a;
+    background: #0077b6; /* Deep blue */
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
@@ -21,13 +21,14 @@ nav {
 }
 
 nav a {
-    color: #ffffff;
+    color: #caf0f8; /* Light teal */
     text-decoration: none;
     margin: 0 15px;
 }
 
 nav a:hover {
     text-decoration: underline;
+    color: #90e0ef; /* Lighter teal on hover */
 }
 
 .container {
@@ -37,7 +38,7 @@ nav a:hover {
 }
 
 footer {
-    background: #35424a;
+    background: #0077b6; /* Match header */
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
@@ -48,11 +49,11 @@ footer {
 
 .card {
     background: #ffffff;
-    border: 1px solid #dddddd;
+    border: 1px solid #90e0ef; /* Soft teal border */
     border-radius: 5px;
     padding: 20px;
     margin: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 119, 182, 0.08);
 }
 
 .card h2 {
@@ -63,7 +64,7 @@ footer {
     display: inline-block;
     font-size: 16px;
     color: #ffffff;
-    background: #5cb85c;
+    background: #00b4d8; /* Bright teal */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -71,5 +72,5 @@ footer {
 }
 
 .button:hover {
-    background: #4cae4c;
+    background: #0096c7; /* Slightly darker teal */
 }
