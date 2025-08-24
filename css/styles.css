@@ -31,10 +31,27 @@ nav a:hover {
     color: #90e0ef; /* Lighter teal on hover */
 }
 
+nav a.active {
+    color: #ffffff; /* White for active link */
+    background-color: #00b4d8; /* Bright teal background */
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
+}
+
+section {
+    padding: 40px 0;
+    min-height: 300px;
+}
+
+section:first-of-type {
+    padding-top: 20px;
 }
 
 footer {
